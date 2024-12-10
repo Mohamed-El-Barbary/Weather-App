@@ -3,7 +3,6 @@
 const searcInput = document.getElementById("search");
 const btnFind = document.getElementById("submit");
 const loading = document.querySelector(".loading");
-// let weekData = [];
 
 // ^ Start JS
 
@@ -43,7 +42,7 @@ async function getWeatherData(city) {
   const response = await api.json();
   let weatherData = response;
   let currentDay = weatherData;
-  weekData = weatherData.forecast.forecastday;
+  const weekData = weatherData.forecast.forecastday;
   await displayCurrentDay(currentDay);
   displayWeekData(weekData);
 }
