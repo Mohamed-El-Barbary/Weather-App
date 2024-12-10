@@ -37,7 +37,7 @@ btnFind.addEventListener("click", () => {
 // Get weather Data
 async function getWeatherData(city) {
   const api = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=5560895c1b5d4edba11235232240912&q=${city}&days=7`
+    `https://api.weatherapi.com/v1/forecast.json?key=5560895c1b5d4edba11235232240912&q=${city}&days=7`
   );
 
   const response = await api.json();
