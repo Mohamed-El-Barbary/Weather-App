@@ -114,10 +114,14 @@ function displayWeekData(weekData) {
     cartona += `
       <div class="card-info" >
         <div class="card">
-                    <divclass="d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center"
+                    >
                       <h4 class="text-center">${dayName}</h4>
                     </div>
-                    <divclass="card-body d-flex flex-column align-items-center">
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
                       <img src="${weekData[i].day.condition.icon}" alt="" />
                       <h4 class="card-title h5">MAX : ${weekData[i].day.maxtemp_c} °C</h4>
                       <p class="card-text text-color">MIN : ${weekData[i].day.mintemp_c} °C</p>
