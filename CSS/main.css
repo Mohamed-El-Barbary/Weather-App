@@ -7,7 +7,7 @@
   --text-color: #bfc1c8;
 }
 
-.bg-main-color{
+.bg-main-color {
   background-color: var(--main-color) !important;
 }
 .main-color {
@@ -297,7 +297,10 @@ footer p {
 
 @media (min-width: 992px) {
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  footer form {
+    width: 100%;
+  }
 }
 
 /* //////////////// */
