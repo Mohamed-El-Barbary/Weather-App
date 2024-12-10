@@ -242,7 +242,6 @@ footer p {
   font-size: 14px;
   font-weight: 300;
   display: flex;
-  /* align-items: center; */
   align-items: baseline;
   gap: 10px;
 }
@@ -304,6 +303,10 @@ footer p {
   }
   .weather-current-info .card-body h4 {
     font-size: calc(3rem + 8vw);
+  }
+
+  .contact .form-details {
+    padding: 0;
   }
 }
 
