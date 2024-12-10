@@ -66,16 +66,10 @@ function displayCurrentDay(weatherData) {
                       <div class="ms-md-3">
                         <h3 class="card-title">${weatherData.location.name}</h3>
                         <div class="d-flex gap-3">
-                          <h4 class="card-title h5">${
-                            weatherData.current.temp_c
-                          }°C</h4>
-                          <img src="${
-                            weatherData.current.condition.icon
-                          }" alt="" />
+                          <h4 class="card-title h5">${weatherData.current.temp_c}°C</h4>
+                          <img src="${weatherData.current.condition.icon}" alt="" />
                         </div>
-                        <p class="card-text h4 main-color">${
-                          weatherData.current.condition.text
-                        }</p>
+                        <p class="card-text h4 main-color">${weatherData.current.condition.text}</p>
                       </div>
                     </div>
                     <div class="col-lg-5">
@@ -84,28 +78,20 @@ function displayCurrentDay(weatherData) {
                           <i class="fa-solid fa-droplet"></i>
                           <p class="d-flex flex-column m-0 text-center">
                             <span class="d-inline-block">humidity</span>
-                            <span class="d-inline-block text-color">${
-                              weatherData.current.humidity
-                            }%</span>
+                            <span class="d-inline-block text-color">${weatherData.current.humidity}%</span>
                           </p>
                         </div>
                         <div class="humidity d-flex gap-2 align-items-center">
                           <i class="fa-solid fa-wind"></i>
                           <p class="d-flex flex-column m-0 text-center">
                             <span class="d-inline-block">Wind Speed</span>
-                            <span class="d-inline-block text-color"
-                              >${Math.floor(
-                                weatherData.current.wind_kph
-                              )} km/h</span
-                            >
+                            <span class="d-inline-block text-color">${Math.floor(weatherData.current.wind_kph)} km/h</span>
                           </p>
                         </div>
                         <div class="humidity d-flex gap-2 align-items-center">
                           <i class="fa-solid fa-compass"></i>
                           <p class="d-flex flex-column m-0">
-                            <span class="d-inline-block text-color">${
-                              weatherData.current.wind_dir
-                            }</span>
+                            <span class="d-inline-block text-color">${weatherData.current.wind_dir}</span>
                           </p>
                         </div>
                       </div>
@@ -128,14 +114,10 @@ function displayWeekData(weekData) {
     cartona += `
       <div class="card-info" >
         <div class="card">
-                    <div
-                      class="d-flex justify-content-center"
-                    >
+                    <divclass="d-flex justify-content-center">
                       <h4 class="text-center">${dayName}</h4>
                     </div>
-                    <div
-                      class="card-body d-flex flex-column align-items-center"
-                    >
+                    <divclass="card-body d-flex flex-column align-items-center">
                       <img src="${weekData[i].day.condition.icon}" alt="" />
                       <h4 class="card-title h5">MAX : ${weekData[i].day.maxtemp_c} °C</h4>
                       <p class="card-text text-color">MIN : ${weekData[i].day.mintemp_c} °C</p>

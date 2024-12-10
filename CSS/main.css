@@ -301,10 +301,12 @@ footer p {
   footer form {
     width: 100%;
   }
+  .weather-current-info .card-body h4 {
+    font-size: calc(3rem + 8vw);
+  }
 }
 
-/* //////////////// */
-/* Loading */
+/*? Loading Animation */
 
 .loading {
   position: fixed;
