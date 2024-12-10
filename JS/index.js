@@ -7,9 +7,9 @@ const loading = document.querySelector(".loading");
 
 // ^ Start JS
 
-(() => {
+(async () => {
   loading.classList.remove("d-none");
-  getWeatherData("Tanta");
+  await getWeatherData("Tanta");
   loading.classList.add("d-none");
 })();
 
