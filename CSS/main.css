@@ -82,8 +82,9 @@ nav .navbar-nav a.current {
 
 /***** Landing Search *****/
 .landing-search {
-  background-image: url(../Images/banner.png);
+  background-image: url(../Images/weather3.jpg);
   background-size: cover;
+  background-position: 50% 80%;
   position: relative;
   padding: 70px 0;
   min-height: 350px;
